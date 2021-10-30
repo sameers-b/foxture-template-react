@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     border: "1px solid green",
+    borderRadius: "5px",
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
       "&:focus": {
@@ -78,14 +79,11 @@ const SignIn = () => {
             <li>
               <a>Shop</a>
             </li>
-            <li>
-              <a>Home</a>
-            </li>
           </ul>
         </nav>
         <nav className="nav-mid">
           <a href="" className="logo">
-            my Logo
+            <h3>Foxture</h3>
           </a>
         </nav>
         <nav className="nav-right">

@@ -14,19 +14,19 @@ header {
   align-items: center;
   padding: 15px 100px;
   z-index: 10;
-  background-color: rgb(172, 170, 170);
+  background-color: rgb(201, 201, 201);
 }
 header .logo {
   position: relative;
-  font-size: 1.5em;
+  font-size: 2em;
   color: rgb(15, 15, 15);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   margin-right: 100px;
   /* border: 1px solid red; */
 }
 header nav {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 30%;
 }
 header nav,
@@ -37,7 +37,7 @@ ul {
   margin: 10px 0;
 }
 ul {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 header ul li {
   list-style: none;
@@ -48,8 +48,28 @@ header ul li a {
   font-weight: 500;
   letter-spacing: 1px;
 }
+header .nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+header .nav-left ul {
+  /* width: 70%; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+header .nav-mid {
+  position: relative;
+  left: 60px;
+}
+header .nav-right {
+  /* border: 1px dotted cyan; */
+  width: 500px;
+  position: relative;
+  left: 100px;
+}
 header ul li a:hover {
-  color: rgb(232, 253, 255);
+  color: rgb(158, 163, 110);
 }
 header .search {
   position: relative;
