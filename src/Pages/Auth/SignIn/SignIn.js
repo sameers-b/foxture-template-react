@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create("width"),
     width: "100%",
-    border: "1px solid green",
+    border: "1px solid black",
     borderRadius: "5px",
     [theme.breakpoints.up("sm")]: {
       width: "12ch",
@@ -110,11 +110,12 @@ const SignIn = () => {
                 aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
-              >
-                <div className="profile">
-                  <AccountCircle />
-                </div>
-              </IconButton>
+              ></IconButton>
+            </li>
+            <li>
+              <div className="profile">
+                <AccountCircle />
+              </div>
             </li>
             <li>
               <IconButton
@@ -129,66 +130,6 @@ const SignIn = () => {
             </li>
           </ul>
         </nav>
-
-        {/* <div className="nav nav-left">
-          <a href="" className="logo">
-            my Logo
-          </a>
-          <ul>
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Shop</a>
-            </li>
-            <li>
-              <a>Home</a>
-            </li>
-          </ul>
-        </div>
-        <div className="nav">
-          <div className="search">
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-            </div>
-          </div>
-          <ul>
-            <li>
-              <InputBase
-                placeholder="Search…"
-                classes={{
-                  root: classes.inputRoot,
-                  input: classes.inputInput,
-                }}
-                inputProps={{ "aria-label": "search" }}
-              />
-              <IconButton
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <div className="profile">
-                  <AccountCircle />
-                </div>
-              </IconButton>
-            </li>
-            <li>
-              <IconButton
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleMenu}
-                color="inherit"
-              >
-                <ShoppingCartIcon />
-              </IconButton>
-            </li>
-          </ul> */}
-        {/* </div> */}
       </header>
     </>
   );
