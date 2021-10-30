@@ -4,13 +4,12 @@ import { Route, Switch, Redirect } from "react-router-dom";
 // file import
 import Shop from "./Pages/react-old/Shop";
 import Cart from "./Pages/react-old/Cart";
-import SignIn from './Pages/Auth/SignIn/SignIn'
+import Header from './Components/Header/Header'
 // Redux
 import ReduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { createStore, combineReducers, applyMiddleware } from "redux";
-
 // import routes from './Routes.js';
 import authReducer from "./reduxStore/reducers/auth";
 
@@ -30,7 +29,7 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={SignIn} />
+          <Route path="/" exact component={Header} />
           {/* <Redirect from="/" to="/shop" /> */}
           {/* <Route path="/shop" exact component={Shop} />
           <Route path="/" exact component={Cart} /> */}
