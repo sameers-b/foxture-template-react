@@ -5,6 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Shop from "./Pages/react-old/Shop";
 import Cart from "./Pages/react-old/Cart";
 import Header from './Components/Header/Header'
+import Product from './Components/Product/Product'
 // Redux
 import ReduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
@@ -29,7 +30,7 @@ const App = () => {
     <Provider store={store}>
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Header} />
+          <Route path="/" exact component={Product} />
           {/* <Redirect from="/" to="/shop" /> */}
           {/* <Route path="/shop" exact component={Shop} />
           <Route path="/" exact component={Cart} /> */}
