@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Header.css";
 import InputBase from "@material-ui/core/InputBase";
 import { alpha, makeStyles } from "@material-ui/core/styles";
@@ -6,8 +6,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import IconButton from "@material-ui/core/IconButton";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import MenuIcon from '@material-ui/icons/Menu';
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
+import CloseIcon from '@material-ui/icons/Close'
 import Badge from "@material-ui/core/Badge";
 
 
@@ -51,7 +53,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Header = () => {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [isMobile, setIsMobile] = useState(true);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
   const handleMenu = (event) => {
@@ -64,7 +67,8 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="nav-left">
+        <nav className={isMobile?'nav-left':'mobile mobile-menu'}>
+          {isMobile ? '':<h1 className="mobile-logo">Foxture</h1>}
           <ul>
             <li>
               <a>Home</a>
@@ -149,6 +153,12 @@ const Header = () => {
               </IconButton>
             </li>
           </ul>
+        </nav>
+        {/* Mobile View */}
+        <nav className="mobile mobile-icon">
+          <button onClick={()=>{setIsMobile(isMobile?false:true)}}>
+            {isMobile ? <MenuIcon />:<CloseIcon/>}
+          </button>
         </nav>
       </header>
     </>
