@@ -106,28 +106,34 @@
     }
     .mobile-icon{
       display: flex;
+      cursor: pointer;
+      width: 50px;
       position: fixed;
       /* border: 1px solid red; */
-      margin-left: 55%;
+      margin-left: 70%;
+      outline:none;
     }
     .mobile-menu{
       display: block;
       /* overflow: hidden; */
       z-index: 15;
       width: 250px;
-      height: 700px;
+      height: 686px;
       /* border: 1px solid red; */
       position: absolute;
       top: -10px;
       left: 0px;
-      background-color: rgb(150, 150, 49);
+      background-color: rgb(192, 192, 84);
+      transition: all 1s;
     }
     .mobile-menu ul{
       display: block;
     }
     .mobile-menu li{
-      border: 1px solid red;
+      /* border: 1px solid red; */
       margin: 20px 10px;
+      display: flex;
+      justify-content: space-between;
     }
     .mobile-menu li a{
       font-weight: bold;

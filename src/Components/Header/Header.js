@@ -11,7 +11,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import CloseIcon from '@material-ui/icons/Close'
 import Badge from "@material-ui/core/Badge";
-
+import AddIcon from '@material-ui/icons/Add';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,10 +72,13 @@ const Header = () => {
           <ul>
             <li>
               <a>Home</a>
+              {isMobile?'':<a><AddIcon/></a>}
             </li>
             <li>
               <a>Shop</a>
+              {isMobile?'':<a><AddIcon/></a>}
             </li>
+            {isMobile ? '': <ul><li><a>Login</a></li><li><a>New Account</a></li></ul>}
           </ul>
         </nav>
         <nav className="nav-mid">
