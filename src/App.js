@@ -5,6 +5,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Shop from "./Pages/react-old/Shop";
 import Cart from "./Pages/react-old/Cart";
 import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 import BestProduct from "./Components/BestProduct";
 // Redux
 import ReduxThunk from "redux-thunk";
@@ -36,6 +37,7 @@ const App = () => {
           {/* <Route path="/shop" exact component={Shop} />
           <Route path="/" exact component={Cart} /> */}
         </Switch>
+        <Footer />
       </BrowserRouter>
     </Provider>
   );
