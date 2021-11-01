@@ -1,7 +1,8 @@
-import "./Product.css";
 import GradeIcon from "@material-ui/icons/Grade";
 
 const Product = () => {
+  require("./Product.css");
+
   return (
     <>
       <div className="product">

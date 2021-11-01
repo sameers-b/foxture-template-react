@@ -1,13 +1,13 @@
 import Product from "./Product/Product";
-import "./BestProduct.css";
 
 const BestProduct = () => {
+  require("./BestProduct.css");
   const mystyle = {
     marginBottom: "50px",
   };
   return (
     <>
-      <section>
+      <section className="best-product-sec">
         <div className="best-product">
           <span>
             <Product />
