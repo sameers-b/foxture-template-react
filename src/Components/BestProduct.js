@@ -2,20 +2,37 @@ import Product from "./Product/Product";
 import "./BestProduct.css";
 
 const BestProduct = () => {
+  const mystyle = {
+    marginBottom: "50px",
+  };
   return (
     <>
       <section>
-        <div className="best-product-row-1">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
-        </div>
-        <div className="best-product-row-2">
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+        <div className="best-product">
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
+          <span>
+            <Product />
+          </span>
         </div>
       </section>
     </>

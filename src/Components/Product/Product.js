@@ -27,6 +27,9 @@ const Product = () => {
           <div className="product-name">Pendent light roof minimal</div>
           <div className="product-price">
             <span>$ 55.00</span>
+            <span>
+              <del>$120.0</del>
+            </span>
           </div>
           <div className="product-color">
             <span style={{ "background-color": "red" }}></span>

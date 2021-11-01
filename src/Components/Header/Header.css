@@ -18,7 +18,7 @@ header {
   align-items: center;
   padding: 15px 100px;
   z-index: 10;
-  background-color: rgb(201, 201, 201);
+  background-color: #fff;
 }
 header .logo {
   position: relative;
@@ -87,7 +87,7 @@ header .search {
 }
 .mobile-icon button {
   border: none;
-  background: rgb(201, 201, 201);
+  background: white;
 }
 
 /* Mobile View */
@@ -116,9 +116,9 @@ header .search {
   .mobile-menu {
     display: block;
     /* overflow: hidden; */
-    z-index: 15;
+    z-index: 100;
     width: 250px;
-    height: 686px;
+    height: 1000px;
     /* border: 1px solid red; */
     position: absolute;
     top: -10px;
