@@ -77,3 +77,24 @@
 .footer-info-col-4 img {
   margin-right: 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-info-col-1,
+  .footer-info-col-2,
+  .footer-info-col-3,
+  .footer-info-col-4 {
+    flex: 30%;
+    margin-left: 5px;
+    /* border-top: 1px solid red; */
+  }
+  .footer-info {
+    padding: 10px 0px 10px 5px;
+  }
+  .footer-info-col-1,
+  .footer-info-col-3 {
+    margin: 0 10px 0 50px;
+  }
+  .footer-icon-social {
+    /* border-top: 1px solid red; */
+  }
+}
