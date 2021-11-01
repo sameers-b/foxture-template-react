@@ -1,145 +1,145 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: Poppins, sans-serif;
- }
- .mobile{
-   display: none;
- }
- header {
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 90px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 15px 100px;
-   z-index: 10;
-   background-color: rgb(201, 201, 201);
- }
- header .logo {
-   position: relative;
-   font-size: 2em;
-   color: rgb(15, 15, 15);
-   text-decoration: none;
-   font-weight: 700;
-   margin-right: 100px;
-   /* border: 1px solid red; */
- }
- header nav {
-   /* border: 1px solid red; */
-   width: 30%;
- }
- li {
-   cursor: pointer;
- }
- header nav,
- ul {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   margin: 10px 0;
- }
- ul {
-   /* border: 1px solid black; */
- }
- header ul li {
-   list-style: none;
-   margin: 0 10px;
- }
- header ul li a {
-   text-decoration: none;
-   font-weight: 500;
-   letter-spacing: 1px;
- }
- header .nav-left {
-   display: flex;
-   justify-content: flex-start;
- }
- header .nav-left ul {
-   /* width: 70%; */
-   display: flex;
-   justify-content: space-between;
-   font-size: 19px;
- }
- header .nav-mid {
-   position: relative;
-   left: 60px;
- }
- header .nav-right {
-   /* border: 1px dotted cyan; */
-   width: 500px;
-   position: relative;
-   left: 100px;
- }
- header .nav-right ul li:first-child {
-   /* border: 1px solid black; */
-   padding-top: 5px;
- }
- header ul li a:hover {
-   color: rgb(158, 163, 110);
- }
- header .search {
-   position: relative;
- }
- .mobile-icon button{
-    border: none;
-    background: rgb(201, 201, 201);
- }
- 
- /* Mobile View */
- @media screen and (max-width:980px){
-   .nav-left ul li{
-      display: none;
-    }
-    .nav-mid h3{
-      /* border: 1px solid red; */
-      position: fixed;
-      top: 20px;
-      left: 20px;
-    }
-    .nav-right{
-      display: none;
-    }
-    .mobile-icon{
-      display: flex;
-      cursor: pointer;
-      width: 50px;
-      position: fixed;
-      /* border: 1px solid red; */
-      margin-left: 70%;
-      outline:none;
-    }
-    .mobile-menu{
-      display: block;
-      /* overflow: hidden; */
-      z-index: 15;
-      width: 250px;
-      height: 686px;
-      /* border: 1px solid red; */
-      position: absolute;
-      top: -10px;
-      left: 0px;
-      background-color: rgb(192, 192, 84);
-      transition: all 1s;
-    }
-    .mobile-menu ul{
-      display: block;
-    }
-    .mobile-menu li{
-      /* border: 1px solid red; */
-      margin: 20px 10px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .mobile-menu li a{
-      font-weight: bold;
-    }
-    .mobile-logo{
-       font-size: 40px;
-       margin: 50px 0 40px 50px;
-    }
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+.mobile {
+  display: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  z-index: 10;
+  background-color: rgb(201, 201, 201);
+}
+header .logo {
+  position: relative;
+  font-size: 2em;
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 100px;
+  /* border: 1px solid red; */
+}
+header nav {
+  /* border: 1px solid red; */
+  width: 30%;
+}
+li {
+  cursor: pointer;
+}
+header nav,
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+ul {
+  /* border: 1px solid black; */
+}
+header ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+header ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+header .nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+header .nav-left ul {
+  /* width: 70%; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+}
+header .nav-mid {
+  position: relative;
+  left: 60px;
+}
+header .nav-right {
+  /* border: 1px dotted cyan; */
+  width: 500px;
+  position: relative;
+  left: 100px;
+}
+header .nav-right ul li:first-child {
+  /* border: 1px solid black; */
+  padding-top: 5px;
+}
+header ul li a:hover {
+  color: rgb(158, 163, 110);
+}
+header .search {
+  position: relative;
+}
+.mobile-icon button {
+  border: none;
+  background: rgb(201, 201, 201);
+}
+
+/* Mobile View */
+@media screen and (max-width: 980px) {
+  .nav-left ul li {
+    display: none;
+  }
+  .nav-mid h3 {
+    /* border: 1px solid red; */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .nav-right {
+    display: none;
+  }
+  .mobile-icon {
+    display: flex;
+    cursor: pointer;
+    width: 50px;
+    position: fixed;
+    /* border: 1px solid red; */
+    margin-left: 70%;
+    outline: none;
+  }
+  .mobile-menu {
+    display: block;
+    /* overflow: hidden; */
+    z-index: 15;
+    width: 250px;
+    height: 686px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    background-color: rgb(192, 192, 84);
+    transition: all 1s;
+  }
+  .mobile-menu ul {
+    display: block;
+  }
+  .mobile-menu li {
+    /* border: 1px solid red; */
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-menu li a {
+    font-weight: bold;
+  }
+  .mobile-logo {
+    font-size: 40px;
+    margin: 50px 0 40px 50px;
+  }
+}
