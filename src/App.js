@@ -33,10 +33,8 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={Auth} />
-          {/* <Redirect from="/" to="/shop" /> */}
-          {/* <Route path="/shop" exact component={Shop} />
-          <Route path="/" exact component={Cart} /> */}
+          <Route path="/" exact component={BestProduct} />
+          <Route path="/auth" exact component={Auth} />
         </Switch>
         <Footer />
       </BrowserRouter>

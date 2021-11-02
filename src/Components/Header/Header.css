@@ -19,7 +19,7 @@ header {
   padding: 15px 20px;
   z-index: 10;
   background-color: #fff;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 header .logo {
   position: relative;
@@ -28,7 +28,7 @@ header .logo {
   text-decoration: none;
   font-weight: 700;
   margin-right: 100px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 header nav {
   /* border: 1px solid red; */
@@ -60,6 +60,7 @@ header .nav-left {
   display: flex;
   justify-content: flex-start;
   /* position: fixed; */
+  border: 1px solid green;
 }
 header .nav-left ul {
   /* width: 70%; */
@@ -70,9 +71,10 @@ header .nav-left ul {
 header .nav-mid {
   /* position: fixed; */
   /* left: 60px; */
+  border: 1px solid blue;
 }
 header .nav-right {
-  /* border: 1px dotted black; */
+  border: 1px dotted violet;
   display: flex;
   position: relative;
 }

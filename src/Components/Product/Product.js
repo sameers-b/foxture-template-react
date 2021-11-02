@@ -35,11 +35,11 @@ const Product = () => {
               <del>$120.0</del>
             </span>
           </div>
-          <div className="product-color">
+          {/* <div className="product-color">
             <span style={{ "background-color": "red" }}></span>
             <span style={{ "background-color": "black" }}></span>
             <span style={{ "background-color": "pink" }}></span>
-          </div>
+          </div> */}
           <div className="product-mob-icon-menu">
             <span className="product-mob-icon">1</span>
             <span className="product-mob-icon">1</span>

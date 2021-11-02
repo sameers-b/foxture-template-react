@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import InputBase from "@material-ui/core/InputBase";
 import { alpha, makeStyles } from "@material-ui/core/styles";
@@ -56,7 +57,7 @@ const Header = () => {
           {isMobile ? "" : <h1 className="mobile-logo">Foxture</h1>}
           <ul>
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
               {isMobile ? (
                 ""
               ) : (
@@ -66,7 +67,7 @@ const Header = () => {
               )}
             </li>
             <li>
-              <a>Shop</a>
+              <Link to="/">Shop</Link>
               {isMobile ? (
                 ""
               ) : (
@@ -80,19 +81,19 @@ const Header = () => {
             ) : (
               <ul>
                 <li>
-                  <a>Login</a>
+                  <Link to="/auth">Login</Link>
                 </li>
                 <li>
-                  <a>New Account</a>
+                  <Link to="/auth">New Account</Link>
                 </li>
               </ul>
             )}
           </ul>
         </nav>
         <nav className="nav-mid">
-          <a href="" className="logo">
+          <Link to="/" className="logo">
             <h3>Foxture</h3>
-          </a>
+          </Link>
         </nav>
         <nav className="nav-right">
           <ul
@@ -150,8 +151,12 @@ const Header = () => {
                 onClose={handleClose}
               >
                 <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Login</MenuItem>
-                <MenuItem onClick={handleClose}>New Account</MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <Link to="/auth">Login</Link>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
+                  <Link to="/auth">New Account</Link>
+                </MenuItem>
               </Menu>
             </li>
             <li className="badge-icon">
