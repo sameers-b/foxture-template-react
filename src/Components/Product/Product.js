@@ -1,4 +1,5 @@
 import GradeIcon from "@material-ui/icons/Grade";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 
 const Product = () => {
   require("./Product.css");
@@ -8,7 +9,9 @@ const Product = () => {
       <div className="product">
         <div className="product-card">
           <span className="product-offer">NEW</span>
-          <p></p>
+          <p>
+            <FavoriteBorderIcon color="secondary" />
+          </p>
           <div className="product-icon">
             <span></span>
             <span></span>
@@ -36,6 +39,11 @@ const Product = () => {
             <span style={{ "background-color": "red" }}></span>
             <span style={{ "background-color": "black" }}></span>
             <span style={{ "background-color": "pink" }}></span>
+          </div>
+          <div className="product-mob-icon-menu">
+            <span className="product-mob-icon">1</span>
+            <span className="product-mob-icon">1</span>
+            <span className="product-mob-icon">1</span>
           </div>
         </div>
       </div>

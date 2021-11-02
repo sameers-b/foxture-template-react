@@ -14,11 +14,12 @@ header {
   width: 100%;
   height: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 15px 100px;
+  padding: 15px 20px;
   z-index: 10;
   background-color: #fff;
+  /* border: 1px solid black; */
 }
 header .logo {
   position: relative;
@@ -31,7 +32,7 @@ header .logo {
 }
 header nav {
   /* border: 1px solid red; */
-  width: 30%;
+  /* width: 30%; */
 }
 li {
   cursor: pointer;
@@ -58,6 +59,7 @@ header ul li a {
 header .nav-left {
   display: flex;
   justify-content: flex-start;
+  /* position: fixed; */
 }
 header .nav-left ul {
   /* width: 70%; */
@@ -66,28 +68,47 @@ header .nav-left ul {
   font-size: 19px;
 }
 header .nav-mid {
-  position: relative;
-  left: 60px;
+  /* position: fixed; */
+  /* left: 60px; */
 }
 header .nav-right {
-  /* border: 1px dotted cyan; */
-  width: 500px;
+  /* border: 1px dotted black; */
+  display: flex;
   position: relative;
-  left: 100px;
 }
-header .nav-right ul li:first-child {
-  /* border: 1px solid black; */
-  padding-top: 5px;
+header .nav-right ul li {
+  /* border: 1px solid red; */
 }
 header ul li a:hover {
   color: rgb(158, 163, 110);
 }
-header .search {
+header .search-box {
   position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 15px; */
 }
 .mobile-icon button {
   border: none;
   background: white;
+  /* margin-right: 50px; */
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.searchInput {
+  position: absolute;
+  border: 1px solid #777;
+  width: 85px;
+  border-radius: 15px;
+  height: 30px;
+  padding: 0 15px;
+  left: -90px;
+  outline: none;
+}
+
+.searchInput :focus {
+  width: 175px;
 }
 
 /* Mobile View */
@@ -104,15 +125,6 @@ header .search {
   .nav-right {
     display: none;
   }
-  .mobile-icon {
-    display: flex;
-    cursor: pointer;
-    width: 50px;
-    position: fixed;
-    /* border: 1px solid red; */
-    margin-left: 70%;
-    outline: none;
-  }
   .mobile-menu {
     display: block;
     /* overflow: hidden; */
@@ -125,13 +137,15 @@ header .search {
     left: 0px;
     background-color: rgb(192, 192, 84);
     transition: all 1s;
+    padding-left: 10px;
   }
+
   .mobile-menu ul {
     display: block;
   }
   .mobile-menu li {
     /* border: 1px solid red; */
-    margin: 20px 10px;
+    margin: 20px 0px;
     display: flex;
     justify-content: space-between;
   }
@@ -141,5 +155,25 @@ header .search {
   .mobile-logo {
     font-size: 40px;
     margin: 50px 0 40px 50px;
+  }
+  .account-icon {
+    display: none;
+  }
+  /* .mobile, */
+  .mobile-icon {
+    display: flex;
+    cursor: pointer;
+    width: 50px;
+    /* margin-left: 70%; */
+    outline: none;
+    justify-content: center;
+  }
+  header {
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 780px) {
+  .badge-icon {
+    display: none;
   }
 }
