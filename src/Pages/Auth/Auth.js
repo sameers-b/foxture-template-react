@@ -23,14 +23,14 @@ const Auth = () => {
             <form>
               <p>Returning login</p>
               <span>
-                <input />
+                <input type="email" placeholder="Enter Email" />
               </span>
               <span>
-                <input />
+                <input type="password" placeholder="Enter Password" />
               </span>
               <div>
                 <input type="checkbox" />
-                Save my name, email and password for the next time login.
+                Save my email and password for the next time login.
               </div>
               <button className="btn">Submit</button>
             </form>
@@ -38,13 +38,15 @@ const Auth = () => {
           <div className="auth-register">
             <form>
               <p>New customer sign up</p>
-              <input />
-              <input />
-              <input />
-              <input />
-              <input />
-              <input />
-              <input />
+              <input type="text" placeholder="Enter First Name" />
+              <br />
+              <input type="text" placeholder="Enter Last Name" />
+              <br />
+              <input type="email" placeholder="Enter Email" />
+              <br />
+              <input type="password" placeholder="Enter Password" />
+              <br />
+              <input type="password" placeholder="Confirm Password" />
               <div>
                 <input type="checkbox" />
                 Are you agree terms and condition create an account

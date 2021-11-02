@@ -1,27 +1,76 @@
 .auth-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 20px;
+  width: 100%;
+  margin: 10px 0 50px 0;
 }
 .auth-page-name {
-  border: 1px solid green;
-  padding: 20px;
+  /* border: 1px solid green; */
+  text-align: center;
+}
+.auth-page-name p:first-child {
+  font-size: 35px;
+  margin-bottom: 10px;
 }
 .auth-about {
-  border: 1px solid blue;
-  padding: 20px;
+  /* border: 1px solid blue; */
+}
+.auth-about p:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0 20px 0;
+}
+.auth-about p:last-child {
+  opacity: 0.7;
+  margin: 0 0 20px 0;
 }
 .auth-pages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.auth-pages p {
+  /* border: 1px solid blue; */
+  font-size: 20px;
+  font-weight: bold;
+}
 .auth-login {
-  border: 1px solid orangered;
-  padding: 20px;
+  /* border: 1px solid orangered; */
   flex: 50%;
 }
+.auth-container input[type="text"],
+input[type="email"],
+input[type="password"] {
+  height: 33px;
+  width: 250px;
+  outline: none;
+  margin: 20px 10px 10px 20px;
+  padding-left: 5px;
+  /* border: 1px solid black; */
+}
+input[type="checkbox"] {
+  margin: 10px 5px 30px 0;
+}
 .auth-register {
-  border: 1px solid yellowgreen;
-  padding: 20px;
+  /* border: 1px solid yellowgreen; */
   flex: 50%;
+}
+.auth-container .auth-page-name,
+.auth-about,
+.auth-pages,
+.auth-login,
+.auth-register {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+}
+.auth-container .btn {
+  height: 45px;
+  width: 140px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
 }
