@@ -1,0 +1,111 @@
+*{
+   box-sizing: border-box;
+}
+.cart-container{
+  border: 1px solid red;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+.cart-page-direction{
+  /* border: 1px solid blue; */
+  background-color: rgb(241, 241, 241);
+  margin: 10px 0;
+  padding: 40px 0;
+}
+.cart-product-detail, .cart-2-container{
+  border-top: 1px solid rgb(238, 238, 238);
+  margin: 40px 0;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.cart-product-detail div span:first-child{
+  background-color: rgb(218, 218, 218);
+  display: block;
+  width: 100%;
+  height: 70px;
+  font-size: 18px;
+  font-weight: bold;
+  /* text-align: center; */
+  padding-top: 25px;
+}
+.cart-product-list, .cart-price-list, .cart-quantity-list, .cart-subtotal-list{
+
+}
+.cart-product-list, .cart-price-list, .cart-quantity-list, .cart-subtotal-list span:first-child{
+   margin: 1px;
+   border: 1px solid rgb(226, 226, 226);
+}
+.cart-product-detail div span:last-child{
+   /* border: 1px solid red; */
+   display: block;
+   width: 100%;
+   padding: 20px;
+}
+.product-name{
+   padding-left: 15px;
+}
+.cart-product-list{
+   flex: 44%;
+   text-align: left;
+ }
+ .cart-price-list{
+    flex: 13%;
+ }
+ .cart-quantity-list{
+    flex: 18%;
+ }
+ .cart-subtotal-list{
+    flex: 13%;
+ }
+ .cart-quantity-list button{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border: none;
+    margin: 0 10px;
+    outline: none;
+ }
+ .cart-coupon{
+   /* border: 1px solid red; */
+   width: 40%;
+   /* padding: 0; */
+ }
+ .cart-coupon input{
+    /* border: 1px solid rgb(219, 219, 219); */
+    border: none;
+    background-color: rgb(240, 240, 240);
+    height: 50px;
+    width: 65%;
+    padding-left: 10px;
+    outline: none;
+ }
+ .cart-coupon button{
+    background-color: rgb(83, 83, 83);
+    width: 30%;
+    border: none;
+    height: 50px;
+    color: white;
+ }
+ .cart-total{
+   border: 1px solid rgb(216, 216, 216);
+   width: 60%;
+ }
+ .cart-total div{
+    border: 1px solid red;
+    height: 60px;
+ }
+@media screen and (max-width:1000px){
+   .cart-product-list, .cart-price-list, .cart-quantity-list, .cart-subtotal-list{
+      flex: 100%;
+      text-align: center;
+   }
+   .cart-coupon{
+      width: 100%;
+    }
+    .cart-total{
+      width: 100%;
+    }
+}
