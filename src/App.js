@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import BestProduct from "./Components/BestProduct";
 import Auth from "./Pages/Auth/Auth";
 import Cart from "./Pages/Cart/Cart"
+import CheckOut from "./Pages/CheckOut/CheckOut"
 // Redux
 import ReduxThunk from "redux-thunk";
 import { Provider } from "react-redux";
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/" exact component={BestProduct} />
           <Route path="/auth" exact component={Auth} />
           <Route path="/cart" exact component={Cart} />
+          <Route path="/checkout" exact component={CheckOut} />
         </Switch>
         <Footer />
       </BrowserRouter>
