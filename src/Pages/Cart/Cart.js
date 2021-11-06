@@ -40,18 +40,22 @@ const Cart = () => {
           </div>
           <div className="cart-total">
             <div>
-              <span>Cart Total</span>
+              <p>Cart Total</p>
             </div>
             <div>
               <span>Subtotal</span>
               <span>$1640.00</span>
             </div>
             <div>
-              <span>Shipping Flat rate: Shipping to MA.</span>
+              <span>
+               <p className="cart-total-shipping">Shipping</p>
+               <span className="cart-total-shipping"> Flat rate: </span>
+               <span className="cart-total-shipping">Shipping to MA.</span>
+               </span>
               <span>$50.00</span>
             </div>
             <div>
-              <span>Change Shipping Address:</span>
+              <p>Change Shipping Address:</p>
               <span>
                 <select>
                   <option></option>

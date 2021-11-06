@@ -34,8 +34,9 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={Cart} />
+          <Route path="/" exact component={BestProduct} />
           <Route path="/auth" exact component={Auth} />
+          <Route path="/cart" exact component={Cart} />
         </Switch>
         <Footer />
       </BrowserRouter>

@@ -164,11 +164,10 @@ const Header = () => {
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
-                onClick={handleMenu}
                 color="inherit"
               >
                 <Badge badgeContent={4} color="secondary">
-                  <ShoppingCartIcon />
+                  <Link to="/cart"><ShoppingCartIcon /></Link>
                 </Badge>
               </IconButton>
             </li>
